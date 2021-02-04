@@ -6,17 +6,17 @@ public class Tinh_Chi_So_Can_Nang_Cua_Co_The {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        double weight;
-        double height;
-        double bmi;
+        float weight;
+        float height;
+        float bmi;
 
         System.out.print("Your weight (in kilogram):");
-        weight = scanner.nextDouble();
+        weight = scanner.nextInt();
 
         System.out.print("Your height (in meter):");
-        height = scanner.nextDouble();
+        height = scanner.nextInt();
 
-        bmi = weight / Math.pow(height, 2);
+        bmi = (float) (weight / Math.pow(height, 2));
 
         System.out.printf("%-20s%s", "bmi", "Interpretation\n");
 
